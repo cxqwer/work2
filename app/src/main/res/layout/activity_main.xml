@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextActivity"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:minHeight="50dp"
+        android:minWidth="130dp"
+        android:textColor="#ffffff"
+        android:onClick="onClick"
+        android:background="@drawable/bluebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView2"
+        android:background="#96ffec"
+        android:minHeight="30dp"
+        android:nestedScrollingEnabled="false"
+        android:minWidth="100dp"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toStartOf="@+id/buttonMinus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPlus"
+        android:background="@drawable/button_plus"
+        android:text="@string/buttonPlus"
+        android:textSize="40dp"
+        android:onClick="onButtonPlus"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMinus"
+        android:background="@drawable/button_minus"
+        android:text="@string/buttonMinus"
+        android:textSize="40dp"
+        android:onClick="onButtonMinus"
+        android:layout_above="@+id/buttondelit"
+        android:layout_toEndOf="@+id/buttonProiz" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonProiz"
+        android:background="@drawable/button_proiz"
+        android:text="@string/buttonProiz"
+        android:textSize="40dp"
+        android:onClick="onButtonProiz"
+        android:layout_above="@+id/buttondelit"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttondelit"
+        android:background="@drawable/button_delit"
+        android:text="@string/buttonDelit"
+        android:textSize="40dp"
+        android:onClick="onButtonDelit"
+        android:layout_below="@+id/buttonPlus"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonRavno"
+        android:id="@+id/buttonRavno"
+        android:background="@drawable/button_ravno"
+        android:textSize="40dp"
+        android:onClick="onButtonRavno"
+        android:layout_alignTop="@+id/buttondelit"
+        android:layout_alignStart="@+id/buttonProiz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:background="#96ffec"
+        android:minHeight="40dp"
+        android:nestedScrollingEnabled="false"
+        android:minWidth="150dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/buttonRavno"
+        android:layout_toEndOf="@+id/buttondelit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:minHeight="30dp"
+        android:minWidth="100dp"
+        android:background="#fdff4f"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:minHeight="30dp"
+        android:minWidth="100dp"
+        android:background="#fdff4f"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buttonMinus" />
+
+</RelativeLayout>

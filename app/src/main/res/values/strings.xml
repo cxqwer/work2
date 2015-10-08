@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Первая страничка</string>
+
+
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_second">Вторая страничка</string>
+    <string name="nextActivity">Следующая</string>
+    <string name="gotomainactivity">На главную</string>
+    <string name="buttonPlus">+</string>
+    <string name="buttonMinus">-</string>
+    <string name="buttonProiz">*</string>
+    <string name="buttonDelit">/</string>
+    <string name="buttonRavno">=</string>
+    <string name="Rezalt">Результат</string>
+</resources>
